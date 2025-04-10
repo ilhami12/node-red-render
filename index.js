@@ -10,16 +10,19 @@ const settings = {
   httpNodeRoot: "/api",
   userDir: "./data",
   functionGlobalContext: {},
-  ui: { path: "/ui" },
-  flowFile: 'flows.json', 
+  flowFile: "flows.json"
+  // NOT: Dashboard 2.0 için "ui" ayarı gerekmez, otomatik olarak /ui yerine /api/ui kullanılır.
 };
 
 RED.init(server, settings);
 
+// Admin ve node endpoint'leri bağla
 app.use(settings.httpAdminRoot, RED.httpAdmin);
 app.use(settings.httpNodeRoot, RED.httpNode);
 
+// Sunucuyu başlat
 server.listen(process.env.PORT || 1880);
 
+// Node-RED'i başlat
 RED.start();
 
