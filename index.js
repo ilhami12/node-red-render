@@ -11,6 +11,7 @@ const settings = {
   userDir: "./data",
   functionGlobalContext: {},
   ui: { path: "/ui" },
+  flowFile: 'flows.json', 
 };
 
 RED.init(server, settings);
