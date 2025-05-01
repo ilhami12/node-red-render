@@ -1,0 +1,12 @@
+{
+  "name": "node-red-render",
+  "version": "1.0.0",
+  "description": "Node-RED on Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/node-red/red.js -v -u ./data"
+  },
+  "dependencies": {
+    "node-red": "^3.1.0"
+  }
+}
