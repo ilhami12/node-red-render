@@ -12,6 +12,7 @@
     "@flowfuse/node-red-dashboard": "^1.2.3",
     "node-red-node-mysql": "^2.0.0",
     "node-red-node-sqlite": "^1.1.0",
+    "node-red-contrib-excel": "^0.2.1",
     "express": "^4.18.2"
   }
 }
